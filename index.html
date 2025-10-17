@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archana Achu — Portfolio</title>
+  <meta name="description" content="Portfolio of Archana Achu — projects, skills and contact." />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ <style>
+    body {
+      background: linear-gradient(180deg, #19053f 0%, #031841 100%);
+      color: #e6eef8;
+      font-family: 'Inter', system-ui, sans-serif;
+      padding: 40px 20px;
+    }
+    footer {margin-top: 40px; color: #94a3b8; font-size: 14px; text-align: center;}
+    .profile-img {
+  max-width: 250px; /* reduce image size */
+  height: auto;     /* keep proportions */
+}
+.sidebar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: #212529;       /* dark box */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.sidebar .nav-link {
+  color: #bbb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+.sidebar .nav-link:hover {
+  color: #fff;               /* hover effect */
+}
+.sidebar .nav-link.active {
+  color: #0d6efd;            /* highlight active */
+}
+ #about {
+  animation: fadeIn .5s ease-in-out;
+}
+.custom-btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 10px rgba(249, 82, 188, 0.6); }
+  50% { box-shadow: 0 0 25px rgb(193, 60, 162); }
+  100% { box-shadow: 0 0 10px rgba(153, 21, 125, 0.6); }
+}
+.profile-img {
+  width: 70%;
+  margin-left: 270px;
+  margin-top: 56px;
+  max-width: 280px;
+  border-radius: 15px;
+  animation: pulse-glow 3s infinite;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+.project-card video {
+  border-radius: 15px 15px 0 0;
+  max-height: 200px;
+  object-fit: cover;
+}
+  </style>
+</head>
+<body class="flex justify-center">
+  <div class="wrap container max-w-screen-lg">
+    <header class="d-flex justify-content-between align-items-center mb-4">
+      <div class="brand d-flex align-items-center gap-2">
+        
+        <div>
+          <div class="fw-bold text-lg">ARCHANA</div>
+          <div class="text-muted small">Full Stack Developer</div>
+        </div>
+      </div>
+      <nav class="d-none d-md-flex gap-3">
+        <a href="index.html" class="text-gray-400 hover:text-white">Home</a>
+        <a href="#about" class="text-gray-400 hover:text-white">About</a>
+        <a href="#projects" class="text-gray-400 hover:text-white">Projects</a>
+        <a href="#skills" class="text-gray-400 hover:text-white">Skills</a>
+        <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+      </nav>
+      <!-- Sidebar -->
+<nav class="sidebar d-flex flex-column p-3">
+  <a href="index.html" class="nav-link mb-2">Home</a>
+  <a href="#about" class="nav-link mb-2">About</a>
+  <a href="#projects" class="nav-link mb-2">Projects</a>
+  <a href="#skills" class="nav-link mb-2">Skills</a>
+  <a href="#contact" class="nav-link">Contact</a>
+  <br>
+<br>
+</nav>
+    </header>
+    <br> <br> <br> <br>
+<main>
+ <section class="hero row align-items-center mb-4 g-5">
+  <!-- Left Content -->
+  <div class="col-md-6 bg-dark p-4 rounded-lg shadow hero-box">
+    <h1 class="fw-bold display-5 text-light animate__animated animate__fadeInLeft animate__delay-1.5s">
+      Hi I'm <span class="text-primary">ARCHANA...</span>
+    </h1>
+    <p class="text-light opacity-75 mb-3 animate__animated animate__fadeInLeft animate__delay-1s">
+      I build clean, modern websites & web apps.  
+      I craft user interfaces with a focus on accessibility, performance and delightful details.
+    </p>
+    <div class="d-flex gap-2 mt-2">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-outline-light" href="#contact">Get in touch</a>
+    </div>
+     <div class="d-flex gap-2 mt-2">
+       <a class="btn btn-success" href="Archana resume story.pdf">Download CV</a>
+     </div>
+  </div>
+  <!-- Right Image -->
+  <div class="col-md-6 mt-4 mt-md-0 text-center">
+    <img src="archanapic.jpg" alt="profile mock" class="profile-img animate__animated animate__fadeInRight animate__delay-1.5s" />
+  </div>
+</section>
+ <br> <br><br><br><br><br><br>
+<!-- About Me Section -->
+<section id="about" class="container py-5">
+  <h2 class="text-center text-3xl font-bold mb-5">ABOUT ME</h2>
+  <div class="row align-items-center">
+    <!-- Left Side Image -->
+    <div class="col-md-5 text-center mb-4 mb-md-0">
+      <img src="archanapic.jpg" 
+           alt="Archana Profile" 
+           class="rounded-circle shadow-lg border border-4 border-primary mx-auto"
+           style="width: 250px; height: 250px; object-fit: cover;">
+    </div>
+    <!-- Right Side Text -->
+    <div class="col-md-7">
+      <div class="card-custom">
+        <h3 class="fw-bold mb-3 text-primary">Hi, I'm Archana 👋</h3>
+        <p class="mb-3 text-light">
+          I’m a passionate <span class="text-warning fw-semibold">Full Stack Developer</span> and 
+          <span class="text-warning fw-semibold">Web Designer</span> who loves creating dynamic, user-friendly, 
+          and visually appealing digital experiences. My goal is to build responsive and accessible web 
+          applications that combine creativity and technology.
+        </p>
+        <p class="mb-3 text-light">
+          I specialize in front-end and back-end development using modern tools like 
+          <span class="text-info">HTML, CSS, JavaScript, Bootstrap</span> and <span class="text-info">Tailwind</span>.
+          I’m constantly exploring new frameworks and technologies to enhance my skills and stay current with 
+          industry trends.
+        </p>
+        <p class="mb-4 text-light">
+          Beyond coding, I enjoy designing intuitive interfaces, experimenting with animations, 
+          and learning about AI-powered applications. I believe in continuous learning and 
+          strive to make every project a step forward in my journey as a developer.
+        </p>
+        <!-- Optional Buttons -->
+<div class="mt-3">
+  <a href="https://www.linkedin.com/in/archanarvs" target="_blank" class="btn btn-primary me-2 custom-btn">
+    <i class="bi bi-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://github.com/Archana2004-hub" target="_blank" class="btn btn-dark me-2 custom-btn">
+    <i class="bi bi-github"></i> GitHub
+  </a>
+  <a href="https://www.google.com/maps/@11.0139689,76.967235,12z?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-outline-danger custom-btn">
+    <i class="bi bi-geo-alt"></i> Location
+  </a>
+  <br><br>
+<a href="#" class="btn btn-success me-2 custom-btn" data-bs-toggle="modal" data-bs-target="#introVideoModal">
+  <i class="bi bi-play-circle"></i> Intro
+</a>
+</div>
+      </div>
+    </div>
+  </div>
+  <!-- Intro Video Modal -->
+<div class="modal fade" id="introVideoModal" tabindex="-1" aria-labelledby="introVideoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="introVideoModalLabel">My Introduction Video</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="ratio ratio-16x9">
+          <iframe id="introVideo" src="https://youtube.com/shorts/grXzOQMKyI0?si=vbLhh0vQUgctT4an" 
+                  title="YouTube video" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div> </div> </div> </div> </div>
+</section>
+ <br><br><br><br><br><br><br><br>
+      <!-- PROJECTS Section -->
+<section id="projects" class="my-5 py-5 bg-dark rounded-lg">
+  <div class="container">
+    <h2 class="text-center text-3xl font-bold text-white mb-5">PROJECTS</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white border-0 shadow-lg project-card h-100">
+          <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+            <source src="VEDIO1.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-white">Single Ball Animation</h5>
+            <p class="card-text text-light">An animation project demonstrating motion and basic interaction using JavaScript.</p>
+            <a class="btn btn-success" href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white border-0 shadow-lg project-card h-100">
+          <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+            <source src="VEDIO 2.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-white">Multiple Ball</h5>
+            <p class="card-text text-light">Interactive multiple balls bouncing with collision detection and effects.</p>
+             <a class="btn btn-success" href="#">View Project</a>
+            </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white border-0 shadow-lg project-card h-100">
+          <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+            <source src="VEDIO 3.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-white">Pacman Game</h5>
+            <p class="card-text text-light">Classic Pacman game built using JavaScript for gameplay logic and animations.</p>
+             <a class="btn btn-success" href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white border-0 shadow-lg project-card h-100">
+          <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+            <source src="VEDIO 4.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-white">Location</h5>
+            <p class="card-text text-light">Marker on the map from  Sulur to Coimbatore using functions on javascript</p>
+             <a class="btn btn-success" href="">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white border-0 shadow-lg project-card h-100">
+          <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+            <source src="Eye.mp4" type="video/mp4">
+          </video>
+          <br>
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-white">Two Eye</h5>
+            <p class="card-text text-light">Upgraded  version with smoother animation and more challenges.</p>
+             <a class="btn btn-success" href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white border-0 shadow-lg project-card h-10px">
+          <video class="card-img-top rounded-top" autoplay muted loop playsinline>
+            <source src="VEDIO6.mp4" type="video/mp4">
+          </video>
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-white">Custom Animation</h5>
+            <p class="card-text text-light">A creative animation showing advanced object movement using JS and CSS.</p>
+             <a class="btn btn-success" href="#">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br> <br> <br> <br>
+<!-- CSS for hover -->
+<style>
+  .project-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+  .project-card video {
+    border-radius: 8px;
+  }
+  .skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .skill-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  .skill-card i {
+    transition: transform 0.4s ease, color 0.3s ease;
+  }
+  .skill-card:hover i {
+    transform: rotate(10deg) scale(1.2);
+    color: #0d6efd; /* Bootstrap primary */
+  }
+</style>
+<br><br><br>
+      <section id="skills" class="my-5">
+        <br>
+        <br>
+         <h2 class="text-center text-3xl font-bold mb-5">SKILLS</h2>
+         <br>
+         <br>
+        <div class="row g-3">
+    <div class="col-md-6 col-sm-8">
+      <div class="card skill-card text-center shadow-sm border-0 p-4 h-100" style="background-color: rgb(202, 136, 171);" data-aos="fade-up">
+        <i class="bi bi-code-slash  fs-1 mb-3"></i>
+        <h5 class="fw-bold text">HTML</h5>
+        <p class="text-dark">Building structured web pages</p>
+      </div>
+    </div>
+          <div class="col-md-6 col-sm-8">
+      <div class="card skill-card text-center shadow-sm border-0 p-4 h-100" style="background-color: rgb(162, 241, 165);" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-palette text-success fs-1 mb-3"></i>
+        <h5 class="fw-bold text-success">CSS</h5>
+        <p class="text-dark">Styling responsive layouts</p>
+      </div>
+    </div>
+    <span></span>
+         
+    <div class="col-md-6 col-sm-8">
+      <div class="card skill-card text-center shadow-sm border-0 p-4 h-100" style="background-color: rgb(236, 244, 171);"data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-lightning-charge text-warning fs-1 mb-3"></i>
+        <h5 class="fw-bold text-warning ">JAVASCRIPT</h5>
+        <p class="text-dark">Interactive functionality</p>
+      </div>
+    </div>
+<div class="col-md-6 col-sm-8">
+      <div class="card skill-card text-center shadow-sm border-0 p-4 h-100" style="background-color: rgb(139, 139, 234);" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-bootstrap-fill text-primary fs-1 mb-3"></i>
+        <h5 class="fw-bold text-primary">BOOTSTRAP</h5>
+        <p class="text-dark">Fast UI development</p>
+      </div>
+    </div>
+  </div>
+  
+      </section>
+   <section id="contact" class="my-5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-xl fw-bold mb-3">CONTACT</h2>
+        <form onsubmit="event.preventDefault(); alert('Thanks — message simulated (no backend).')" class="bg-dark p-4 rounded-lg">
+          <div class="mb-3 row g-2">
+            <div class="col-md-12"><input type="text" placeholder="Enter Your Name" class="form-control" required></div>
+            <br>
+            <div class="col-md-12"><input type="email" placeholder=" Enter Your Email" class="form-control" required></div>
+          </div>
+          <div class="mb-3"><textarea rows="4" placeholder="Message Here" class="form-control" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </main>
+<br><br><br>
+    <footer class="text-center text-light py-3">© <span id="year"></span> Archana  • Built with Bootstrap & Tailwind CSS</footer>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+const videoModal = document.getElementById('introVideoModal');
+const videoIframe = document.getElementById('introVideo');
+const videoSrc = videoIframe.src;
+videoModal.addEventListener('hidden.bs.modal', () => {
+  // Stop the video when modal closes
+  videoIframe.src = '';
+  setTimeout(() => videoIframe.src = videoSrc, 300);
+});
+  </script>
+</body>
+</html>
